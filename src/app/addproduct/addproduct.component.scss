@@ -1,0 +1,29 @@
+.item {
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 1.3rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+    transition: all .3s ease-in-out;
+    p{
+        font-size:.9rem;
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+
+    }
+
+    .Btn {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+// .apperPrice{
+//     margin-bottom: 6rem;
+// }

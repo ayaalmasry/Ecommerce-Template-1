@@ -1,0 +1,13 @@
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2rem;
+  background-color: aquamarine;
+  .nav{
+    li>a{
+      font-size:1rem;
+      color:#000
+    }
+  }
+}

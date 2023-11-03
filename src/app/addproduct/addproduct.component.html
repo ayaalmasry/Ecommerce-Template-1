@@ -1,0 +1,27 @@
+<div class="item">
+    <div (click)="goDetails(product.id)">
+    <img src="{{product.image}}" alt="" class="img-thumbnail">
+    <p (click)="toggleDescription(product)">
+        {{ showShortDescription(product) }}
+        <span *ngIf="product.showFullDescription">{{ product.description }}</span>
+    </p>
+    <h2>{{product.category
+        }}</h2>
+        </div>
+    <div class="Btn">
+        <button type="button" class="btn btn-primary" (click)="addButton=true"*ngIf="!addButton" >Add to Cart</button>
+        <div class="d-flex w-50" *ngIf="addButton">
+            <input type="number" class="form-control" [(ngModel)]="amount">
+            <button class="btn btn-danger px-1" class="btn btn-primary" (click)="add();addButton=false">+</button>
+            </div>
+            
+        
+        <!-- <input type="number" class="form-control ml-" id="exampleFormControlInput1"
+            placeholder="number of product" *ngIf="productFieldNumber" [(ngModel)]="amount">
+        <button type="button" class="btn btn-primary" (click)="add();productFieldNumber=true" *ngIf="productFieldNumber">+</button>
+         -->
+
+        <button type="button" class="btn btn-warning" [ngClass]="{apperPrice:productFieldNumber}">{{product.price}}</button>
+    </div>
+
+</div>
